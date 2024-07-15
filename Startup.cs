@@ -16,7 +16,7 @@ namespace signalRtc
             services.AddCors(options =>
             {
                 options.AddPolicy(MyAllowSpecificOrigins,
-                    builder => builder.WithOrigins("http://localhost:4200", "https://localhost:4200")
+                    builder => builder.WithOrigins("http://localhost:4200", "https://localhost:4200", "https://192.168.0.101:4200", "http://192.168.0.101:4200")
                     .AllowAnyMethod()
                     .AllowAnyHeader()
                     .AllowCredentials());
